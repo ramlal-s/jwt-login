@@ -6,13 +6,13 @@ export const AUTHENTICATED = "authenticated_user";
 export const UNAUTHENTICATED = "unauthenticated_user";
 export const AUTHENTICATION_ERROR = "authentication_error";
 
-//const URL = "http://52.76.240.170";
+//const URL = "http://url";
 console.log("EMAIL111");
 export function signInAction({ email, password }, history) {
   return async dispatch => {
     try {
       //console.log("EMAIL", email + password);
-      const res = await axios.post("http://52.76.240.170/login", {
+      const res = await axios.post("http://url", {
         username: email,
         password: password
       });
